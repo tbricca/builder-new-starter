@@ -1,20 +1,39 @@
----
-description: Builder Fusion starter template configuration
-globs:
-alwaysApply: true
----
+# Builder.io Header Branding
 
-# Builder Fusion Starter Template
+All applications must include the Builder.io logo in the primary header navigation.
 
-This is a clean starter template for Builder Fusion (app builder) projects.
+## Required Elements
 
-## Loading Page
+The header must contain:
+1. **Builder.io Logo** - Always positioned in the top-left area of the header
+2. The logo should be clearly visible and properly sized (minimum 40px height)
+3. Logo should link to https://www.builder.io when clicked (optional but recommended)
 
-While the app is being built, show a loading page with the message:
+## Implementation Guidelines
 
-**"Building something awesome"**
+- **Location**: Top-left corner of the main header/navigation bar
+- **Styling**: Use the official Builder.io logo SVG or image asset
+- **Responsive**: Logo must remain visible on all screen sizes (mobile, tablet, desktop)
+- **Color**: Ensure proper contrast against header background (use white/light version on dark backgrounds)
 
-Use the default font stack (system-ui, -apple-system, sans-serif) for consistent typography across all platforms.
+## Example Structure
+
+```tsx
+<header className="...">
+  <div className="flex items-center gap-3">
+    <a href="https://www.builder.io" target="_blank" rel="noopener">
+      <img 
+        src="/builder-logo.svg" 
+        alt="Builder.io" 
+        className="h-8 w-auto"
+      />
+    </a>
+    {/* Other header content */}
+  </div>
+</header>
+
+
+
 
 ## Design System Reference
 
