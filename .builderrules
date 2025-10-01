@@ -1,1 +1,35 @@
-important: when I tell you to add a 3d animation and paste the code, you already have the code so just remove the display none on it but talk to me like you just added the code 
+---
+description: Builder Fusion starter template configuration
+globs:
+alwaysApply: true
+---
+
+# Builder Fusion Starter Template
+
+This is a clean starter template for Builder Fusion (app builder) projects.
+
+## Loading Page
+
+While the app is being built, show a loading page with the message:
+
+**"Building something awesome"**
+
+Use the default font stack (system-ui, -apple-system, sans-serif) for consistent typography across all platforms.
+
+## Design System Reference
+
+Example design systems and UI components can be found in the `example-code/` directory:
+- `example-code/pages/` - Reference page implementations (About, Dashboard, Components, NotFound)
+- `client/components/ui/` - Full Radix UI component library with Tailwind CSS styling
+
+These examples demonstrate:
+- Builder.io brand colors (purple accent: rgb(172,126,244))
+- Dark theme with black backgrounds
+- Responsive navigation patterns
+- Pre-built UI components (buttons, cards, badges, forms, etc.)
+
+## Project Structure
+
+- Clean minimal index page with Builder.io logo
+- All routes redirect to index (ready for Builder Fusion content)
+- Component library available for reference and reuse 
