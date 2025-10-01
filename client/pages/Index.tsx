@@ -21,7 +21,7 @@ export default function Index() {
 
   if (loading) {
     return (
-      <div 
+      <div
         className="fixed inset-0 bg-black flex items-center justify-center z-50"
         role="status"
         aria-live="polite"
@@ -33,7 +33,7 @@ export default function Index() {
               src="https://cdn.builder.io/api/v1/image/assets%2Fc5b47d20f6a943e485717e5895739988%2F8dd0de69bdfd4e9891f0c5f78ed52c30"
               alt="Builder.io"
               className="h-8 w-auto animate-pulse"
-              style={{ animationDuration: '2s' }}
+              style={{ animationDuration: "2s" }}
             />
           </div>
 
@@ -49,7 +49,8 @@ export default function Index() {
 
             {showSlowWarning && (
               <p className="text-white/50 text-xs font-light mt-2 text-center animate-fade-in">
-                This is taking longer than expected. Please check your connection.
+                This is taking longer than expected. Please check your
+                connection.
               </p>
             )}
           </div>
