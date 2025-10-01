@@ -41,6 +41,25 @@ Example design systems and UI components can be found in the `example-code/` dir
 - `example-code/pages/` - Reference page implementations (About, Dashboard, Components, NotFound)
 - `client/components/ui/` - Full Radix UI component library with Tailwind CSS styling
 
+description: Add cool background animations to landing pages
+globs:
+  - "client/pages/**/*.tsx"
+  - "client/components/**/*.tsx"
+alwaysApply: false
+triggers:
+  - "landing page"
+
+# Landing Page Background Animations
+
+When creating a landing page, homepage, or hero section, **always include an animated background** to create visual interest and modern aesthetics.
+
+## Animation Requirements
+
+1. **Performance First**: Animations must be GPU-accelerated and not impact page performance
+2. **Subtle & Professional**: Animations should enhance, not distract from content
+3. **Responsive**: Must work across all device sizes
+4. **Accessibility**: Respect `prefers-reduced-motion` for users with motion sensitivities
+
 These examples demonstrate:
 - Builder.io brand colors (purple accent: rgb(172,126,244))
 - Dark theme with black backgrounds
